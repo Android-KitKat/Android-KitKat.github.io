@@ -1,0 +1,1 @@
+const getCanonical=()=>{const e=document.querySelector('head > link[rel="canonical"]');if(!e?.href)return;return`${new URL(e.href).origin}${location.pathname}`};Object.defineProperty(window,"TWIKOO_MAGIC_HREF",{configurable:!0,get:getCanonical});
